@@ -1,0 +1,30 @@
+{
+  "name": "seikai_fanart_gallery",
+  "version": "1.0.0",
+  "description": "This is a gallery site that collects and displays artworks from Seikai Animation Club. You are welcomed to contribute to the collection, and feel free to follow us on social media.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lightbluecactus/seikai_fanart_gallery.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lightbluecactus/seikai_fanart_gallery/issues"
+  },
+  "homepage": "https://github.com/lightbluecactus/seikai_fanart_gallery#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.50.1"
+  }
+}

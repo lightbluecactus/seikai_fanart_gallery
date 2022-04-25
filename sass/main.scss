@@ -4,7 +4,7 @@
 
 // general rules here
 
-#backgroundImg {
+#backgroundImg {  // fixed background image
     overflow: hidden;
     margin: 0;
     width: 100%;
@@ -44,7 +44,6 @@
 	background-color: #fff;
 	//transition: all .7s cubic-bezier(0.65, 0, 0.35, 1);
 	opacity: 0%;
-	z-index: 1;
 }
 
 #mainNavList
@@ -74,7 +73,7 @@
 // ====== Footer =======
 
 footer {
-    margin: 15vh auto 5vh 7vw;
+    margin: 15vh auto 5vh 11vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -126,7 +125,7 @@ footer {
 
 // logo
 footer > img {
-    margin-left: 12vw;
+    margin-left: 10vw;
     margin-top: -20px;
     height: 100px;
 }
@@ -138,4 +137,55 @@ footer p {
     font-family: $sub-font;
     font-size: 16px;
     color: $blue-bright;
+}
+
+
+
+
+
+
+
+// footer lightbox
+.footerLightbox {
+    display: none;
+    position: fixed;
+	left: 35vw;
+	top: 5vh;
+	width: 30vw;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+}
+
+.showingFooterLightbox {
+    display: flex; // the flexbox is to center the video
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+#accountCloseBtn {
+    width: 35px;
+    padding-left: 25vw;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#accountType {
+    font-family: $sub-font;
+    font-size: 20px;
+    color: $blue-bright;
+    margin-top: 20px;
+}
+
+#accountName {
+    font-family: $main-font;
+    font-size: 24px;
+    color: $blue-dark;
+    margin-top: 15px;
+}
+
+#accountImg {
+    width: 26vw;
+    margin: 25px auto;
+
 }

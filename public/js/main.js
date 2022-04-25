@@ -4,7 +4,22 @@
 	console.log("javascript is linked up");
 
 	const navIcon = document.querySelector("#navIcon"),
-	 	  mainNav = document.querySelector("#mainNav");
+	 	  mainNav = document.querySelector("#mainNav"),
+
+		  socialMedia = document.querySelectorAll(".socialMedia"),
+		  footerLightbox = document.querySelector(".footerLightbox"),
+		  accountCloseBtn = document.querySelector("#accountCloseBtn"),
+		  accountType = document.querySelector("#accountType"),
+		  accountName = document.querySelector("#accountName"),
+		  accountImg = document.querySelector("#accountImg");
+
+	let accountInfo = [
+		[`微信公众号`, `@静海动漫社`],
+		[`微博`, `@静海动漫社官博`],
+		[`哔哩哔哩`, `@首师静海动漫社`],
+		[`乐乎`, `@首都师范大学 静海动漫社`],
+	]
+
 
 	const tl = new TimelineLite({paused: true, reversed: true});
 								// {paused: true} will STOP playing animation as soon as loading the page 
@@ -76,6 +91,30 @@
 	// }
 
 	// navIcon.addEventListener("click", toggleNav);
+
+
+	//=============== Footer Lightbox ===================
+
+	function showFooterLightbox(event) {
+		footerLightbox.classList.add('showingFooterLightbox');
+				
+		let targetAccount = event.target.className.split(" ")[1];
+				
+		// set image
+		let targetAccountSrc = `images/account-${targetAccount}.jpg`;
+		accountImg.src = targetAccountSrc;
+				
+		// set text
+		accountType.textContent = accountInfo[event.target.dataset.account][0];
+		accountName.textContent = accountInfo[event.target.dataset.account][1];
+	}
+
+	function closeFooterLightbox() {
+		footerLightbox.classList.remove('showingFooterLightbox');
+	}
+
+	socialMedia.forEach(icon => icon.addEventListener('click', showFooterLightbox));
+	accountCloseBtn.addEventListener('click', closeFooterLightbox);
 
 
 })();

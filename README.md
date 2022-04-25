@@ -6,8 +6,7 @@ This is a gallery site that collects and displays artworks from Seikai Animation
 这里是收集和展示静海娘同人作品的小站。欢迎静海动漫社成员向我们投稿，也欢迎任何人关注我们的自媒体账号。  
   
 ## View Our Site
-We temporarily deploy our site on Heroku. Here is the link:  
-我们暂时将网站托管于Heroku，以下是连接：
+This site will temporarily remain local due to Heroku authentication issue.
 
 ## Usage
 ## 使用方法
@@ -23,7 +22,8 @@ Run command `node app` and `nodemon app`, open browser and go to localhost:3000.
 使用命令`node app` 和 `nodemon app`， 打开一个浏览器，前往localhost:3000，便可查看网页。 
 
 ## TODO List
-* hover effect research on homepage  
+* hover effect research on homepage   
+* personal favourite items depend on cookies  
 
 ## License
 MIT License

@@ -1,0 +1,68 @@
+@import "vars";
+
+#heroCon {
+    width: 90vw;
+    height: 85vh;
+    margin-top: 10vh;
+    margin-left: 5vw;
+    background: url('../images/hero.png') no-repeat;
+    background-size: 80% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#heroTitle {
+    text-align: right;
+    margin-bottom: 12vh; // to move the title con up
+    margin-right: 10vw;
+}
+
+#heroTitle h2 {
+    font-family: $main-font;
+    font-size: 54px;
+    color: $blue-dark;
+}
+
+#heroTitle h3 {
+    font-family: $sub-font;
+    font-size: 26px;
+    color: $blue-bright;
+    margin-top: 25px;
+    margin-right: 8vw;
+}
+
+#heroTitle ul {
+    margin-top: 10vh;
+}
+
+#heroTitle a {
+    font-family: $main-font;
+    color: $blue-dark;
+    font-size: 24px;
+    transition: all .2s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+#heroTitle a span {
+    display: inline-block; // the rrotating element should be block or inline-block
+    transition: all .2s cubic-bezier(0.65, 0, 0.35, 1); // apply transition to it as well pay attention to the order and time offset
+}
+
+#heroTitle li {
+    margin-bottom: 30px;
+}
+
+#heroTitle a:hover span{
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -o-transform:rotate(45deg); 
+    -ms-transform:rotate(45deg);
+    transform: rotateZ(45deg);
+}
+
+#heroTitle a:hover {
+    color: $blue-bright;
+}
+
+
+

@@ -1,7 +1,141 @@
-// import all of partials first
-// order is important
 @import "modules/reset";
 @import "modules/vars";
-@import "modules/queries";
+@import "modules/homepage";
 
-@import "modules/defaults";
+// general rules here
+
+#backgroundImg {
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+
+    position: fixed; // to let the image stay when scrolling
+    top: 0;
+    left: 0;
+    background-image: url('../images/bckgrd.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+
+#container {
+    transition: all .5s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+#navIcon {
+    position: fixed;
+    top: 3vh;
+    left: 5vw;
+    width: 60px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+#mainNav {
+    // commented rules are used for vanilla JS
+    //display: none;
+    display: flex;
+    width: 20%;
+    //width: 0;
+	height: 100vh;
+	position: fixed; // fixed position lets it stick to window (not page)
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	//transition: all .7s cubic-bezier(0.65, 0, 0.35, 1);
+	opacity: 0%;
+	z-index: 1;
+}
+
+#mainNavList
+{
+	margin-top: 25vh;
+}
+
+#mainNav a
+{
+	color: $blue-dark;
+	font-size: 20px;
+	font-family: $main-font;
+    text-align: center;
+	display: block;
+	margin-bottom: 40px;
+	margin-left: 3vw;
+	transition: all .5s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+
+#mainNav a:hover
+{
+	color: $blue-bright;
+}
+
+
+// ====== Footer =======
+
+footer {
+    margin: 15vh auto 5vh 7vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#socialMediaCon h3 {
+    font-size: 22px;
+    font-family: $main-font;
+    color: $blue-dark;
+}
+
+#socialMediaList {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+#socialMediaList li {
+    margin-right: 15px;
+}
+
+.socialMedia {
+    transition: $transition;
+    cursor: pointer;
+}
+
+.socialMedia:hover {
+    filter: brightness(1.2);
+}
+
+#footerNav {
+    margin-left: 5vw;
+}
+
+#footerNav li {
+    margin-bottom: 10px;
+}
+
+#footerNav a {
+    font-family: $main-font;
+    font-size: 18px;
+    color: $blue-dark;
+    transition: $transition;
+}
+
+#footerNav a:hover {
+    color: $blue-bright;
+}
+
+// logo
+footer > img {
+    margin-left: 12vw;
+    margin-top: -20px;
+    height: 100px;
+}
+
+footer p {
+    width: 100vw;
+    text-align: center;
+    margin-top: 5vh;
+    font-family: $sub-font;
+    font-size: 16px;
+    color: $blue-bright;
+}

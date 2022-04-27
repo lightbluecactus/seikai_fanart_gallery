@@ -36,7 +36,7 @@
 		// fromTo describes both initial and end state, the first {} is start point, second {} is the end
 		.fromTo('#mainNav', 0.5, {
 			opacity: 0,
-			x: -100,
+			x: -200,
 			ease: Cubic.easeOut
 		},{
 			opacity: 0.8,

@@ -1,8 +1,16 @@
 @import "modules/reset";
 @import "modules/vars";
 @import "modules/homepage";
+@import "modules/collection";
 
 // general rules here
+
+// z-index
+// #backgroundImg: -1
+// #navIcon: 10
+// #mainNav: 9
+// footer: 8
+
 
 #backgroundImg {  // fixed background image
     overflow: hidden;
@@ -27,8 +35,17 @@
     top: 3vh;
     left: 5vw;
     width: 60px;
-    z-index: 5;
+    transition: all .8s cubic-bezier(0.65, 0, 0.35, 1);
     cursor: pointer;
+    z-index: 10;
+}
+
+#navIcon:hover {
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform:rotate(90deg); 
+    -ms-transform:rotate(90deg);
+    transform: rotateZ(90deg);
 }
 
 #mainNav {
@@ -44,6 +61,7 @@
 	background-color: #fff;
 	//transition: all .7s cubic-bezier(0.65, 0, 0.35, 1);
 	opacity: 0%;
+    z-index: 9;
 }
 
 #mainNavList
@@ -70,6 +88,10 @@
 }
 
 
+
+
+
+
 // ====== Footer =======
 
 footer {
@@ -77,6 +99,7 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    z-index: 8;
 }
 
 #socialMediaCon h3 {
@@ -153,7 +176,7 @@ footer p {
 	top: 5vh;
 	width: 30vw;
 	align-items: center;
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 0.9);
     border-radius: 20px;
 }
 
@@ -165,9 +188,18 @@ footer p {
 
 #accountCloseBtn {
     width: 35px;
-    padding-left: 25vw;
+    margin-left: 25vw;
     margin-top: 30px;
+    transition: all .8s cubic-bezier(0.65, 0, 0.35, 1);
     cursor: pointer;
+}
+
+#accountCloseBtn:hover {
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform:rotate(90deg); 
+    -ms-transform:rotate(90deg);
+    transform: rotateZ(90deg);
 }
 
 #accountType {

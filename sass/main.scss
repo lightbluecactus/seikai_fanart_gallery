@@ -2,6 +2,7 @@
 @import "modules/vars";
 @import "modules/homepage";
 @import "modules/collection";
+@import "modules/features";
 
 // general rules here
 
@@ -181,7 +182,7 @@ footer p {
 }
 
 .showingFooterLightbox {
-    display: flex; // the flexbox is to center the video
+    display: flex; // the flexbox is to center the lightbox
 	flex-direction: column;
 	justify-content: flex-end;
 }

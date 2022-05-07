@@ -25,37 +25,37 @@ router.get('/collection', (req, res) => {
     res.sendFile(path.join(__dirname, '../views/collection.html'));
 })
 
-router.get('/feature/origin', (req, res) => {
+router.get('/origin', (req, res) => {
     console.log(`on page of origin`);
     res.sendFile(path.join(__dirname, '../views/origin.html'));
 })
 
-router.get('/feature/settingoff', (req, res) => {
+router.get('/settingoff', (req, res) => {
     console.log(`on page of settingoff`);
     res.sendFile(path.join(__dirname, '../views/settingoff.html'));
 })
 
-router.get('/feature/seasons', (req, res) => {
+router.get('/seasons', (req, res) => {
     console.log(`on page of seasons`);
     res.sendFile(path.join(__dirname, '../views/seasons.html'));
 })
 
-router.get('/feature/stickers', (req, res) => {
+router.get('/stickers', (req, res) => {
     console.log(`on page of stickers`);
     res.sendFile(path.join(__dirname, '../views/stickers.html'));
 })
 
-router.get('/feature/theocean', (req, res) => {
+router.get('/theocean', (req, res) => {
     console.log(`on page of theocean`);
     res.sendFile(path.join(__dirname, '../views/theocean.html'));
 })
 
-router.get('/feature/parody', (req, res) => {
+router.get('/parody', (req, res) => {
     console.log(`on page of parody`);
     res.sendFile(path.join(__dirname, '../views/parody.html'));
 })
 
-router.get('/feature/products', (req, res) => {
+router.get('/products', (req, res) => {
     console.log(`on page of products`);
     res.sendFile(path.join(__dirname, '../views/products.html'));
 })

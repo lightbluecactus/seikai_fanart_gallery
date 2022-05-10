@@ -24,6 +24,8 @@ Run command `node app` and `nodemon app`, open browser and go to localhost:3000.
 ## TODO List
 * hover effect research on homepage   
 * personal favourite items depend on cookies  
+* fix scroll behaviour of right arrow on cillection page
+* media queries on mobile screen
 
 ## License
 MIT License

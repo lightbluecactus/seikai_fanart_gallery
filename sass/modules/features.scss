@@ -12,7 +12,7 @@
     font-family: $main-font;
     font-size: 60px;
     color: $blue-dark;
-    width: 25vw;
+    width: 28vw;
 }
 
 .featureIntroCon p {
@@ -30,7 +30,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    //align-items: center;
 }
 
 
@@ -75,9 +75,18 @@
 	justify-content: flex-end;
 }
 
+.imageLightbox p {
+    margin-top: 30px;
+    margin-left: -50vw;
+    font-family: $main-font;
+    font-size: 26px;
+    color: $blue-dark;
+}
+
 .imageViewer {
     width: 60vw;
     margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .imageCloseBtn {
@@ -96,11 +105,33 @@
     transform: rotateZ(90deg);
 }
 
-.imageLightbox p {
-    margin-top: 30px;
-    margin-bottom: 50px;
-    margin-left: -50vw;
+
+
+//---------- banner con -------------
+
+#bannerCon {
+    margin: 7vh 11vw auto 12vw;
+}
+
+#bannerCon h2 {
     font-family: $main-font;
-    font-size: 26px;
+    font-size: 46px;
     color: $blue-dark;
+    margin-bottom: 50px;
+}
+
+#collectionBanner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#collectionBanner img {
+    margin-bottom: 30px;
+    max-width: 400px;
+    transition: $transition;
+}
+
+#collectionBanner img:hover {
+    max-width: 395px;
 }

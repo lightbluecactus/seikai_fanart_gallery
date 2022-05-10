@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, width=device-width">
+		<title>静海娘同人作品站</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&family=Noto+Serif+SC&display=swap" rel="stylesheet">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+		
+	</head>
+	<body>
+		<h1 class="hidden">静海娘同人作品站 Seikai Fanart Illustration Gallery</h1>
+		
+		<div id="backgroundImg"></div> <!-- fixed background image con -->
+
+		<div id="container">
+
+			<header>
+				<div>
+					<img src="images/nav.svg" id="navIcon" alt="nav icon - click to toggle navagation" title="打开或关闭导航栏 | Toggle navigation">
+				</div>
+				<nav id="mainNav">
+					<h2 class="hidden">导航 Main Navigation</h2>
+					<ul id="mainNavList">					
+						<li><a href="/">主页 | Home</a></li>
+						<li><a href="collection">画廊 | Collection</a></li>
+						<li><a href="about">关于 | About</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<main>
+               <section class="featureIntroCon">
+                    <h2>四季流转</h2>
+                    <p>这场没有终点的旅途中，她倾听过第一朵花苞绽放的声音，描摹过五彩的树叶的形状，尝过漫天雪花的味道。她喜欢四季的风穿过指间的感觉，就好像与亘古万物联系在一起。时间总会把一些片段抛在后面，却又让它们在新的时间里回转复生。</p>
+               </section>
+
+               <section class="galleryCon">
+                    <h2 class="hidden">作品展示区 Gallery Panel</h2>
+
+                    <div class="illustColumn">
+                        <img src="images/seasons-1-1.jpg" data-author="qiuheng" class="illustration" data-aos="fade-up" alt="illustration image">
+                        <img src="images/seasons-1-2.jpg" data-author="carlos" class="illustration" data-aos="fade-up" alt="illustration image">
+                        <img src="images/seasons-1-3.jpg" data-author="zhiyuan" class="illustration" data-aos="fade-up" alt="illustration image">
+                        <img src="images/seasons-1-4.jpg" data-author="shisan" class="illustration" data-aos="fade-up" alt="illustration image">
+                    </div>
+
+                    <div class="illustColumn">
+                        <img src="images/seasons-2-1.jpg" data-author="zhiyuan" class="illustration" data-aos="fade-up" alt="illustration image">
+                        <img src="images/seasons-2-2.jpg" data-author="carlos" class="illustration" data-aos="fade-up" alt="illustration image">
+                        <img src="images/seasons-2-3.jpg" data-author="severin" class="illustration" data-aos="fade-up" alt="illustration image">
+                        <img src="images/seasons-2-4.jpg" data-author="yuying" class="illustration" data-aos="fade-up" alt="illustration image">
+                    </div>
+
+                    <div class="illustColumn">
+                        <img src="images/seasons-3-1.jpg" data-author="chengmu" class="illustration" data-aos="fade-up" alt="illustration image">
+                        <img src="images/seasons-3-2.jpg" data-author="lanran" class="illustration" data-aos="fade-up" alt="illustration image">
+                        <img src="images/seasons-3-3.jpg" data-author="moqi" class="illustration" data-aos="fade-up" alt="illustration image">
+                        <img src="images/seasons-3-4.jpg" data-author="langlang" class="illustration" data-aos="fade-up" alt="illustration image">
+                    </div>
+
+                    <div class="illustColumn">
+                        <img src="images/seasons-4-1.jpg" data-author="daiyu" class="illustration" data-aos="fade-up" alt="illustration image">
+                        <img src="images/seasons-4-2.jpg" data-author="jiaojiao" class="illustration" data-aos="fade-up" alt="illustration image">
+                        <img src="images/seasons-4-3.jpg" data-author="moon" class="illustration" data-aos="fade-up" alt="illustration image">
+                        <img src="images/seasons-4-4.jpg" data-author="baishuang" class="illustration" data-aos="fade-up" alt="illustration image">
+                    </div>
+                    
+                </section>  <!--  end of galleryCon -->
+
+				<section class="imageLightbox">
+					<img src="images/nav-close.svg" class="imageCloseBtn" alt="关闭窗口 click to close" title="关闭窗口 click to close">
+					<h2 class="hidden">查看作品 View Illustration</h2>
+					<p>画手：<span class="authorName"></span></p>
+					<img src="" class="imageViewer" alt="illustration image">
+				</section>
+
+				<section id="bannerCon">
+					<h2 title="More Collections">更多系列</h2>
+					<div id="collectionBanner">
+						<a href="origin"><img src="images/banner-1.png" alt="collection 1 Origin"></a>
+                        <a href="settingoff"><img src="images/banner-2.png" alt="collection 2 Setting off"></a>
+                        <!-- <a href="seasons"><img src="images/banner-3.png" alt="collection 3 Seasons"></a> -->
+                        <a href="stickers"><img src="images/banner-4.png" alt="collection 4 Stickers"></a>
+                        <a href="theocean"><img src="images/banner-5.png" alt="collection 5 The ocean"></a>
+                        <a href="parody"><img src="images/banner-6.png" alt="collection 6 Parody"></a>
+                        <a href="crafts"><img src="images/banner-7.png" alt="collection 7 crafts"></a>
+					</div>
+				</section>
+
+
+				<section class="footerLightbox">
+					<img src="images/nav-close.svg" id="accountCloseBtn" alt="关闭窗口 click to close" title="关闭窗口 click to close">
+					<p id="accountType"></p>
+					<p id="accountName"></p>
+					<img src="" id="accountImg" alt="account QR code">
+				</section>
+
+				<footer>
+					<h2 class="hidden">底部栏 Main Footer</h2>
+					<section id="socialMediaCon">
+						<h3 title="Social media list">关注我们：</h3>
+						<ul id="socialMediaList">
+							<li><img src="images/media-wechat.png" alt="WeChat" class="socialMedia wechat" data-account="0"></li>
+							<li><img src="images/media-weibo.png" alt="Weibo" class="socialMedia weibo" data-account="1"></li>
+							<li><img src="images/media-bilibili.png" alt="Bilibili" class="socialMedia bilibili" data-account="2"></li>
+							<li><img src="images/media-lofter.png" alt="Lofter" class="socialMedia lofter" data-account="3"></li>
+						</ul>
+					</section>
+					<section id="footerNav">
+						<h3 class="hidden">底部导航 | Footer navagation</h3>
+						<ul>
+							<li><a href="/">主页 | Home</a></li>
+							<li><a href="collection">画廊 | Collection</a></li>
+							<li><a href="about">关于 | About</a></li>
+						</ul>
+					</section>
+					<img src="images/seikai-logo.png" alt="Seikai logo">
+					<p id="copyrightCon">&copy; 2022 Seikai Animation Club</p>
+				</footer>
+
+			</main>
+
+		</div> <!-- end of container -->
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js" integrity="sha512-tSIDeirKC6suYILHqqPuZH3s0MvD4a5vCHXhBIcdmq4gQXZ2IB3fEYA5x2f3D2p/CbSqzKEvuTEVbS5VZ2u+ew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js" integrity="sha512-ocsFo48WU8Xq6Y1Lwi7psXRAujG9E4TKNR4q1DbrKzaaxOMTEoao/a+mDoB+cYzY4lwbyxvqjkp/ZA1/MNlfsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js" integrity="sha512-pvDW4tehKKsohH97164HwKwRGFpzayEFWTVbk8HuUoLIQ7Jp+WLN5XYokVuoCj2aT6dy8ihbW8SRTG1k0W4mSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="js/main.js" type="module" defer></script>
+        <script src="js/features.js" type="module" defer></script>
+	</body>
+
+</html>
+

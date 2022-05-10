@@ -27,6 +27,9 @@
 			case 'baishuang':
 				authorName.textContent = '白霜';
 				break;
+			case 'carlos':
+				authorName.textContent = 'Carlos';
+				break;
 			case 'chenjuan':
 				authorName.textContent = '陈卷';
 				break;
@@ -45,6 +48,12 @@
 			case 'chuijiang':
 				authorName.textContent = '锤酱';
 				break;
+			case 'daiyu':
+				authorName.textContent = '带鱼';
+				break;
+			case 'fanka':
+				authorName.textContent = '饭卡';
+				break;
 			case 'guoshuzhi':
 				authorName.textContent = '果蔬汁';
 				break;
@@ -60,6 +69,21 @@
 			case 'lanran':
 				authorName.textContent = '蓝染';
 				break;
+			case 'langlang':
+				authorName.textContent = '朗朗';
+				break;
+			case 'lgd':
+				authorName.textContent = 'LGD';
+				break;
+			case 'mingzhou':
+				authorName.textContent = '茗舟';
+				break;
+			case 'moon':
+				authorName.textContent = 'moon';
+				break;
+			case 'moqi':
+				authorName.textContent = '莫琦';
+				break;
 			case 'nanaki':
 				authorName.textContent = 'Nanaki';
 				break;
@@ -68,6 +92,12 @@
 				break;
 			case 'qiuruo':
 				authorName.textContent = '秋若';
+				break;
+			case 'severin':
+				authorName.textContent = 'severin';
+				break;
+			case 'shaoshu':
+				authorName.textContent = '芍书';
 				break;
 			case 'shisan':
 				authorName.textContent = '什仨拾伞';
@@ -81,11 +111,20 @@
 			case 'xiaolv':
 				authorName.textContent = '小律';
 				break;
+			case 'yanyi':
+				authorName.textContent = '砚一';
+				break;
 			case 'yuluo':
 				authorName.textContent = '羽洛';
 				break;
 			case 'yunche':
 				authorName.textContent = '云澈';
+				break;
+			case 'yuying':
+				authorName.textContent = '雨影';
+				break;
+			case 'zhiyuan':
+				authorName.textContent = '致远舰';
 				break;
 
 			default:

@@ -55,9 +55,9 @@ router.get('/parody', (req, res) => {
     res.sendFile(path.join(__dirname, '../views/parody.html'));
 })
 
-router.get('/products', (req, res) => {
-    console.log(`on page of products`);
-    res.sendFile(path.join(__dirname, '../views/products.html'));
+router.get('/crafts', (req, res) => {
+    console.log(`on page of crafts`);
+    res.sendFile(path.join(__dirname, '../views/crafts.html'));
 })
 
 

@@ -1,0 +1,104 @@
+@import "vars";
+
+#aboutIntro {
+    margin: 15vh 12vw 10vh 15vw;
+}
+
+#aboutIntro h2 {
+    font-family: $main-font;
+    font-size: 48px;
+    color: $blue-dark;
+    text-align: center;
+}
+
+#aboutIntro h3 {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-family: $sub-font;
+    font-size: 28px;
+    color: $blue-bright;
+    text-align: center;
+}
+
+#aboutIntro p {
+    font-family: $main-font;
+    font-size: 20px;
+    color: $blue-dark;
+    line-height: 36px;
+}
+
+#actionCon {
+    margin: 10vh 12vw 15vh 15vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.actionPanel {
+    width: 18vw;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 50px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.actionPanel h3 {
+    font-family: $main-font;
+    font-size: 20px;
+    color: $blue-dark;
+}
+
+.actionPanel img {
+    margin: 25px auto;
+}
+
+.actionPanel p {
+    margin-bottom: 30px;
+    width: 14vw;
+    font-family: $sub-font;
+    font-size: 18px;
+    color: $blue-bright;
+    line-height: 30px;
+    text-align: center;
+}
+
+.actionBtn {
+    border-style: none;
+    border-radius: 10px;
+    background-color: $grey;
+    padding: 2vh 2vw;
+    //transition: $transition;
+    cursor: pointer;
+}
+
+.actionBtn, .actionBtn a {
+    font-family: $sub-font;
+    font-size: 18px;
+    color: $blue-dark;
+    transition: $transition;
+}
+
+.actionBtn:hover {
+    background-color: #918c96;
+    color: $grey;
+}
+
+.actionBtn:hover a {
+    color: $grey;
+}
+
+#counterCon, #contactInfo {    
+    display: none;
+    margin-top: 25px;
+}
+
+#contactInfo p {
+    font-size: 16px;
+}
+
+#counterCon {
+    display: none;
+    font-size: 16px;
+}

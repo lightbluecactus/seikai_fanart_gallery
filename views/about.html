@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, width=device-width">
+		<title>静海娘同人作品站</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&family=Noto+Serif+SC&display=swap" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+		
+	</head>
+	<body>
+		<h1 class="hidden">静海娘同人作品站 Seikai Fanart Illustration Gallery</h1>
+		
+		<div id="backgroundImg"></div> <!-- fixed background image con -->
+
+		<div id="container">
+
+			<header>
+				<div>
+					<img src="images/nav.svg" id="navIcon" alt="nav icon - click to toggle navagation" title="打开或关闭导航栏 | Toggle navigation">
+				</div>
+				<nav id="mainNav">
+					<h2 class="hidden">导航 Main Navigation</h2>
+					<ul id="mainNavList">					
+						<li><a href="/">主页 | Home</a></li>
+						<li><a href="collection">画廊 | Collection</a></li>
+						<li><a href="about">关于 | About</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<main>
+                <section id="aboutIntro">
+                    <h2>关于我们</h2>
+                    <h3>About Us</h3>
+                    <p>这里是静海动漫社画线部！</p>
+                    <p>这个网站致力于收集以社娘——静海娘为主题的同人产出，包括插画、表情包、海报设计、周边产品和手工制作等。</p>
+                    <p>如果你的作品还未收集在此，欢迎向我们投稿。无需担心水平高低，每一份作品都是一份心意，我们的工作仅是让水流汇聚成海洋。也相信观看作品的访客都可以用欣赏的眼光去看待每一张作品。</p>
+                    <p>网站上的作品图片仅作展示用途，且都经过缩图处理。我们希望访客如有需要可以联系画手，请勿在未经许可的情况下使用他人的作品，谢谢配合！</p>
+                </section>
+
+                <section id="actionCon">
+                    <h2 class="hidden">行动栏 Call to action</h2>
+
+                    <section class="actionPanel">
+                        <h3>想要开始创作？</h3>
+                        <img src="images/action-spyglass.png" alt="spyglass icon">
+                        <p>从下载设定手册、了解静海娘开始！</p>
+                        <button class="actionBtn">
+                            <a href="../public/document/Seikai_Style_Guide.pdf" download>下载设定手册</a>
+                        </button>
+                    </section>
+
+                    <section class="actionPanel">
+                        <h3>想要投稿作品？</h3>
+                        <img src="images/action-boat.png" alt="boat icon">
+                        <p>我们欢迎各种作品，不论水平高低</p>
+                        <button class="actionBtn" id="DMBtn">
+                            私戳雨影或管理员
+                        </button>
+                        <div id="contactInfo">
+                            <p>雨影QQ: 2581214885</p>
+                        </div>
+                        
+                    </section>
+
+                    <section class="actionPanel">
+                        <h3>想要协助网站？</h3>
+                        <img src="images/action-anchor.png" alt="anchor icon">
+                        <p>欢迎程序大佬（和金主大佬）</p>
+                        <button class="actionBtn" id="counterBtn">
+                            私戳雨影
+                        </button>
+                        <p id="counterCon">
+                            你戳了<span id="counter"></span>下
+                        </p>
+                    </section>
+
+                </section> <!-- end of actionCon -->
+
+
+				<section class="footerLightbox">
+					<img src="images/nav-close.svg" id="accountCloseBtn" alt="关闭窗口 click to close" title="关闭窗口 click to close">
+					<p id="accountType"></p>
+					<p id="accountName"></p>
+					<img src="" id="accountImg" alt="account QR code">
+				</section>
+
+				<footer>
+					<h2 class="hidden">底部栏 Main Footer</h2>
+					<section id="socialMediaCon">
+						<h3 title="Social media list">关注我们：</h3>
+						<ul id="socialMediaList">
+							<li><img src="images/media-wechat.png" alt="WeChat" class="socialMedia wechat" data-account="0"></li>
+							<li><img src="images/media-weibo.png" alt="Weibo" class="socialMedia weibo" data-account="1"></li>
+							<li><img src="images/media-bilibili.png" alt="Bilibili" class="socialMedia bilibili" data-account="2"></li>
+							<li><img src="images/media-lofter.png" alt="Lofter" class="socialMedia lofter" data-account="3"></li>
+						</ul>
+					</section>
+					<section id="footerNav">
+						<h3 class="hidden">底部导航 | Footer navagation</h3>
+						<ul>
+							<li><a href="/">主页 | Home</a></li>
+							<li><a href="collection">画廊 | Collection</a></li>
+							<li><a href="about">关于 | About</a></li>
+						</ul>
+					</section>
+					<img src="images/seikai-logo.png" alt="Seikai logo">
+					<p id="copyrightCon">&copy; 2022 Seikai Animation Club</p>
+				</footer>
+
+			</main>
+
+		</div> <!-- end of container -->
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js" integrity="sha512-tSIDeirKC6suYILHqqPuZH3s0MvD4a5vCHXhBIcdmq4gQXZ2IB3fEYA5x2f3D2p/CbSqzKEvuTEVbS5VZ2u+ew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js" integrity="sha512-ocsFo48WU8Xq6Y1Lwi7psXRAujG9E4TKNR4q1DbrKzaaxOMTEoao/a+mDoB+cYzY4lwbyxvqjkp/ZA1/MNlfsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js" integrity="sha512-pvDW4tehKKsohH97164HwKwRGFpzayEFWTVbk8HuUoLIQ7Jp+WLN5XYokVuoCj2aT6dy8ihbW8SRTG1k0W4mSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="js/main.js" type="module" defer></script>
+        <script src="js/about.js" type="module" defer></script>
+	</body>
+
+</html>
+

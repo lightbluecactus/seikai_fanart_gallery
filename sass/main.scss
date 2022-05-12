@@ -4,6 +4,7 @@
 @import "modules/collection";
 @import "modules/features";
 @import "modules/about";
+@import "modules/404";
 
 // general rules here
 
@@ -54,7 +55,7 @@
     // commented rules are used for vanilla JS
     //display: none;
     display: flex;
-    width: 20%;
+    width: 30%;
     //width: 0;
 	height: 100vh;
 	position: fixed; // fixed position lets it stick to window (not page)
@@ -71,14 +72,13 @@
 	margin-top: 25vh;
 }
 
-#mainNav a
-{
+#mainNav a {
 	color: $blue-dark;
-	font-size: 20px;
+	font-size: 16px;
 	font-family: $main-font;
     text-align: center;
 	display: block;
-	margin-bottom: 40px;
+	margin-bottom: 25px;
 	margin-left: 3vw;
 	transition: all .5s cubic-bezier(0.65, 0, 0.35, 1);
 }
@@ -105,7 +105,7 @@ footer {
 }
 
 #socialMediaCon h3 {
-    font-size: 22px;
+    font-size: 18px;
     font-family: $main-font;
     color: $blue-dark;
 }
@@ -121,6 +121,7 @@ footer {
 }
 
 .socialMedia {
+    width: 20px;
     transition: $transition;
     cursor: pointer;
 }
@@ -139,7 +140,7 @@ footer {
 
 #footerNav a {
     font-family: $main-font;
-    font-size: 18px;
+    font-size: 14px;
     color: $blue-dark;
     transition: $transition;
 }
@@ -150,9 +151,10 @@ footer {
 
 // logo
 footer > img {
-    margin-left: 10vw;
-    margin-top: -20px;
+    margin-left: 0;
+    margin-top: 0;
     height: 100px;
+    width: auto;
 }
 
 footer p {
@@ -160,13 +162,9 @@ footer p {
     text-align: center;
     margin-top: 5vh;
     font-family: $sub-font;
-    font-size: 16px;
+    font-size: 14px;
     color: $blue-bright;
 }
-
-
-
-
 
 
 
@@ -174,9 +172,9 @@ footer p {
 .footerLightbox {
     display: none;
     position: fixed;
-	left: 35vw;
+	left: 20vw;
 	top: 5vh;
-	width: 30vw;
+	width: 60vw;
 	align-items: center;
 	background-color: rgba(255, 255, 255, 0.9);
     border-radius: 20px;
@@ -189,8 +187,8 @@ footer p {
 }
 
 #accountCloseBtn {
-    width: 35px;
-    margin-left: 25vw;
+    width: 20px;
+    margin-left: 50vw;
     margin-top: 30px;
     transition: all .8s cubic-bezier(0.65, 0, 0.35, 1);
     cursor: pointer;
@@ -206,20 +204,116 @@ footer p {
 
 #accountType {
     font-family: $sub-font;
-    font-size: 20px;
+    font-size: 18px;
     color: $blue-bright;
     margin-top: 20px;
 }
 
 #accountName {
     font-family: $main-font;
-    font-size: 24px;
+    font-size: 20px;
     color: $blue-dark;
     margin-top: 15px;
 }
 
 #accountImg {
-    width: 26vw;
+    width: 40vw;
     margin: 25px auto;
+
+}
+
+
+
+// --------- media queries ------------
+
+@media screen and (min-width: 540px) {
+// nav
+    #mainNav {
+        width: 25%;
+    }
+
+    #mainNav a {
+        font-size: 16px;
+    }
+
+// footer 
+    footer {
+        flex-direction: row;
+    }
+
+    .socialMedia {
+        width: auto;
+    }
+
+    // logo
+    footer > img {
+        margin-left: 10vw;
+        margin-top: -20px;
+    }
+
+    .footerLightbox {
+        left: 35vw;
+        width: 40vw;
+    }
+
+    #accountCloseBtn {
+        width: 30px;
+        margin-left: 33vw;
+    }
+
+    #accountImg {
+        width: 30vw;
+    }
+
+    #accountType {
+        font-size: 20px;
+    }
+    
+    #accountName {
+        font-size: 24px;
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 840px) {
+// nav
+    #mainNav {
+        width: 20%;
+    }
+
+    #mainNav a {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+// footer
+    #socialMediaCon h3 {
+        font-size: 22px;
+    }
+
+    #footerNav a {
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+
+    .footerLightbox {
+        left: 35vw;
+        width: 30vw;
+    }
+
+    #accountCloseBtn {
+        width: 35px;
+        margin-left: 25vw;
+    }
+
+    #accountImg {
+        width: 26vw;
+    }
 
 }

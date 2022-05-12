@@ -15,7 +15,7 @@
 	function showImageLightbox(event) {
 		imageLightbox.classList.add('showingImageLightbox');
 		// position property = absolute
-		imageLightbox.style.top = `${document.documentElement.scrollTop}px`;
+		imageLightbox.style.top = `${document.documentElement.scrollTop + 100}px`;
 
 		// set image source
 		imageViewer.src = `${event.target.src}`;

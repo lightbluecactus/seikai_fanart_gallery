@@ -1,0 +1,54 @@
+@import "vars";
+
+#errorCon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+#errorCon h2 {
+    margin-top: 10vh;
+    width: 85vw;
+    font-family: $main-font;
+    font-size: 24px;
+    color: $blue-dark;
+    text-align: center;
+}
+
+#errorCon a {
+    margin-top: 7vh;
+    margin-bottom: 5vh;
+    font-family: $main-font;
+    color: $blue-dark;
+    font-size: 18px;
+    transition: all .2s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+#errorCon a span {
+    display: inline-block; // the rrotating element should be block or inline-block
+    transition: all .2s cubic-bezier(0.65, 0, 0.35, 1); // apply transition to it as well pay attention to the order and time offset
+}
+
+#errorCon a:hover span{
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -o-transform:rotate(45deg); 
+    -ms-transform:rotate(45deg);
+    transform: rotateZ(45deg);
+}
+
+#errorCon a:hover {
+    color: $blue-bright;
+}
+
+
+
+
+// --------- media queries ------------
+@media screen and (min-width: 600px) {
+    #errorCon h2 {
+        font-size: 36px;
+        width: auto;
+    }
+}

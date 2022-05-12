@@ -1,45 +1,46 @@
 @import "vars";
 
 #heroCon {
-    width: 90vw;
+    width: 80vw;
     height: 85vh;
     margin-top: 10vh;
-    margin-left: 5vw;
+    margin-left: 10vw;
     background: url('../images/hero.png') no-repeat;
-    background-size: 80% auto;
+    background-size: 100% auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
 #heroTitle {
-    text-align: right;
-    margin-bottom: 12vh; // to move the title con up
-    margin-right: 10vw;
+    text-align: left;
+    margin-top: 50vw;
+    margin-bottom: auto; // to move the title con up
+    margin-left: 10vw;
 }
 
 #heroTitle h2 {
     font-family: $main-font;
-    font-size: 54px;
+    font-size: 36px;
     color: $blue-dark;
 }
 
 #heroTitle h3 {
     font-family: $sub-font;
-    font-size: 26px;
+    font-size: 18px;
     color: $blue-bright;
     margin-top: 25px;
     margin-right: 8vw;
 }
 
 #heroTitle ul {
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 #heroTitle a {
     font-family: $main-font;
     color: $blue-dark;
-    font-size: 24px;
+    font-size: 18px;
     transition: all .2s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
@@ -49,7 +50,7 @@
 }
 
 #heroTitle li {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 #heroTitle a:hover span{
@@ -65,4 +66,52 @@
 }
 
 
+
+// --------- media queries ------------
+@media screen and (min-width: 540px) {
+    #heroCon {
+        height: 85vh;
+        background-size: 80% auto;
+    }
+
+    #heroTitle {
+        text-align: right;
+        margin-top: auto;
+        margin-bottom: 12vh; // to move the title con up
+        margin-right: 10vw;
+    }
+
+    #heroTitle h2 {
+        font-size: 40px;
+    }
+
+    #heroTitle h3 {
+        font-size: 22px;
+    }
+  
+}
+
+
+@media screen and (min-width: 820px) {
+
+    #heroTitle h2 {
+        font-size: 54px;
+    }
+
+    #heroTitle h3 {
+        font-size: 26px;
+    }
+
+    #heroTitle ul {
+        margin-top: 10vh;
+    }
+
+    #heroTitle a {
+        font-size: 24px;
+    }
+
+    #heroTitle li {
+        margin-bottom: 30px;
+    }
+}
 

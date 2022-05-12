@@ -3,29 +3,32 @@
 .featureIntroCon {
     margin: 15vh 12vw 10vh 15vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 
 .featureIntroCon h2 {
-    display: inline-block;
+    display: inline;
     font-family: $main-font;
-    font-size: 60px;
+    font-size: 36px;
     color: $blue-dark;
-    width: 28vw;
+    width: auto;
 }
 
 .featureIntroCon p {
-    display: inline-block;
-    margin-left: 30px;
+    display: inline;
+    margin-top: 20px;
+    margin-left: 0;
     font-family: $sub-font;
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 14px;
+    line-height: 24px;
     color: #5A9BE3;
 }
 
 .galleryCon {
-    margin: auto 11vw auto 12vw;
+    margin-left: 15vw;
+    margin-right: 11vw;
+    width: 64vw; // fixed width - to stop wrapping when expand nav
     padding-bottom: 10vh;
     display: flex;
     flex-wrap: wrap;
@@ -36,21 +39,21 @@
 
 .illustColumn {
     display: block;
-    width: 18vw;
+    width: 30vw;
     display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 }
 
 .illustration {
-    width: 18vw;
+    width: 30vw;
     margin-bottom: 15px;
     transition: all .7s cubic-bezier(0.65, 0, 0.35, 1) !important;
     cursor: pointer;
 }
 
 .illustration:hover {
-    width: 17vw;
+    width: 28vw;
 }
 
 
@@ -77,9 +80,9 @@
 
 .imageLightbox p {
     margin-top: 30px;
-    margin-left: -50vw;
+    margin-left: -30vw;
     font-family: $main-font;
-    font-size: 26px;
+    font-size: 18px;
     color: $blue-dark;
 }
 
@@ -90,8 +93,8 @@
 }
 
 .imageCloseBtn {
-    width: 35px;
-    margin-left: 75vw;
+    width: 20px;
+    margin-left: 70vw;
     margin-top: 30px;
     transition: all .8s cubic-bezier(0.65, 0, 0.35, 1);
     cursor: pointer;
@@ -110,14 +113,15 @@
 //---------- banner con -------------
 
 #bannerCon {
-    margin: 7vh 11vw auto 12vw;
+    margin: 7vh 11vw auto 15vw;
+    width: 64vw;
 }
 
 #bannerCon h2 {
     font-family: $main-font;
-    font-size: 46px;
+    font-size: 32px;
     color: $blue-dark;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 #collectionBanner {
@@ -127,11 +131,107 @@
 }
 
 #collectionBanner img {
-    margin-bottom: 30px;
-    max-width: 400px;
+    margin-bottom: 20px;
+    max-width: 45vw;
+    padding: auto 25vw;
     transition: $transition;
 }
 
 #collectionBanner img:hover {
-    max-width: 395px;
+    max-width: 44vw;
+}
+
+
+
+
+
+// --------- media queries ------------
+
+@media screen and (min-width: 640px) {
+    .featureIntroCon {
+        flex-direction: row;
+    }
+
+    .featureIntroCon h2 {
+        display: inline-block;
+        font-size: 44px;
+        width: 450px;
+    }
+
+    .featureIntroCon p {
+        display: inline-block;
+        margin-top: 0;
+        margin-left: 30px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .galleryCon {
+        width: 72vw;
+    }
+
+    .illustColumn {
+        width: 17vw;
+    }
+    
+    .illustration {
+        width: 17vw;
+        margin-bottom: 15px;
+    }
+    
+    .illustration:hover {
+        width: 16vw;
+    }
+
+// lightbox
+    .imageLightbox p {
+        font-size: 26px;
+        margin-left: -50vw;
+    }
+
+    .imageCloseBtn {
+        width: 25px;
+    }
+
+// banner 
+    #bannerCon {
+        width: 72vw;
+    }
+
+    #bannerCon h2 {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    #collectionBanner img {
+        margin-bottom: 30px;
+        max-width: 30vw;
+        padding: 0;
+    }
+
+    #collectionBanner img:hover {
+        max-width: 29.5vw;
+    }
+}
+
+@media screen and (min-width: 930px) {
+    .featureIntroCon h2 {
+        font-size: 60px;
+        width: 450px;
+    }
+
+    .featureIntroCon p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+ 
+    .imageCloseBtn {
+        width: 35px;
+    }
+
+
+    #bannerCon h2 {
+        font-size: 46px;
+    }
 }

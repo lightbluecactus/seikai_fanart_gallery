@@ -6,39 +6,40 @@
 
 #aboutIntro h2 {
     font-family: $main-font;
-    font-size: 48px;
+    font-size: 32px;
     color: $blue-dark;
     text-align: center;
 }
 
 #aboutIntro h3 {
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     font-family: $sub-font;
-    font-size: 28px;
+    font-size: 24px;
     color: $blue-bright;
     text-align: center;
 }
 
 #aboutIntro p {
     font-family: $main-font;
-    font-size: 20px;
+    font-size: 16px;
     color: $blue-dark;
-    line-height: 36px;
+    line-height: 28px;
 }
 
 #actionCon {
     margin: 10vh 12vw 15vh 15vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 .actionPanel {
-    width: 18vw;
-    background-color: rgba(255, 255, 255, 0.9);
+    width: 45vw;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
-    padding: 50px 20px 20px 20px;
+    margin: 5vh 12vw;
+    padding: 25px 15px 15px 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,21 +47,22 @@
 
 .actionPanel h3 {
     font-family: $main-font;
-    font-size: 20px;
+    font-size: 18px;
     color: $blue-dark;
 }
 
 .actionPanel img {
-    margin: 25px auto;
+    width: 25px;
+    margin: 15px auto;
 }
 
 .actionPanel p {
-    margin-bottom: 30px;
-    width: 14vw;
+    margin-bottom: 20px;
+    width: 30vw;
     font-family: $sub-font;
-    font-size: 18px;
+    font-size: 14px;
     color: $blue-bright;
-    line-height: 30px;
+    line-height: 20px;
     text-align: center;
 }
 
@@ -75,7 +77,7 @@
 
 .actionBtn, .actionBtn a {
     font-family: $sub-font;
-    font-size: 18px;
+    font-size: 14px;
     color: $blue-dark;
     transition: $transition;
 }
@@ -89,16 +91,86 @@
     color: $grey;
 }
 
-#counterCon, #contactInfo {    
+#contactInfo, #counterCon {    
     display: none;
     margin-top: 25px;
 }
 
-#contactInfo p {
-    font-size: 16px;
+#contactInfo p, #counterCon {
+    font-size: 14px;
 }
 
-#counterCon {
-    display: none;
-    font-size: 16px;
+
+
+
+// --------- media queries ------------
+
+@media screen and (min-width: 768px) {
+    #aboutIntro h2 {
+        font-size: 40px;
+    }
+
+    #aboutIntro h3 {
+        margin-top: 25px;
+        margin-bottom: 35px;
+        font-size: 26px;
+    }
+
+    #aboutIntro p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    #actionCon {
+        flex-direction: row;
+    }
+
+    .actionPanel {
+        width: 18vw;
+        margin: 0;
+        padding: 50px 20px 20px 20px;
+    }
+
+    .actionPanel p {
+        width: 12vw;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #aboutIntro h2 {
+        font-size: 48px;
+    }
+
+    #aboutIntro h3 {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 28px;
+    }
+
+    #aboutIntro p {
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .actionPanel h3 {
+        font-size: 20px;
+    }
+
+    .actionPanel img {
+        width: 50px;
+        margin: 25px auto;
+    }
+
+    .actionPanel p {
+        margin-bottom: 30px;
+        width: 14vw;
+    }
+
+    .actionBtn, .actionBtn a {
+        font-size: 18px;
+    }
+
+    #contactInfo p, #counterCon {
+        font-size: 16px;
+    }
 }

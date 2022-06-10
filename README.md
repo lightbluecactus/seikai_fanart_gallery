@@ -1,12 +1,13 @@
 # Seikai Fanart Illustration Gallery
 # 静海娘同人作品站
   
-This is a gallery site that collects and displays artworks from Seikai Animation Club. You are welcomed to contribute to the collection, and feel free to follow us on social media.  
+This is a gallery site that collects and displays artworks for Seikai Animation Club. You are welcomed to contribute to the collection, and feel free to follow us on social media.  
   
-这里是收集和展示静海娘同人作品的小站。欢迎静海动漫社成员向我们投稿，也欢迎任何人关注我们的自媒体账号。  
+这里是收集和展示静海娘同人作品的小站。欢迎向静海动漫社投稿，也欢迎关注我们的自媒体账号。  
   
 ## View Our Site
-This site will temporarily remain local due to Heroku authentication issue.
+Our site is deployed via Heroku at:  
+https://seikai-fanart-gallery.herokuapp.com/  
 
 ## Usage
 ## 使用方法
@@ -16,7 +17,7 @@ Dowonload this project or `git clone` to your server directory.
 Open a terminal window and `cd` to the project directory, install npm by `npm install`.  
 Run command `node app` and `nodemon app`, open browser and go to localhost:3000. Then you should see the web page.  
 
-根据您的操作系统，下载WAMP/MAMP/LAMP，并打开本地服务器。 
+根据您的操作系统，下载WAMP/MAMP/LAMP，并运行本地服务器。 
 下载此项目或使用`git clone`将其复制到您的本地文件夹中。 
 打开一个终端窗口，转到项目文件夹，使用`npm install`安装npm。  
 使用命令`node app` 和 `nodemon app`， 打开一个浏览器，前往localhost:3000，便可查看网页。 
@@ -24,8 +25,6 @@ Run command `node app` and `nodemon app`, open browser and go to localhost:3000.
 ## TODO List
 * hover effect research on homepage   
 * personal favourite items depend on cookies  
-* fix scroll behaviour of right arrow on cillection page
-* media queries on mobile screen
 
 ## License
 MIT License
